@@ -1,4 +1,4 @@
-'''Practice different mathematical expressions.'''
+'''Practice different mathematical expressions. '''
 
 # declare num_a and num_b
 num_a = 5
