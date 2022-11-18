@@ -33,8 +33,6 @@ def generate_string_with_random_length(threshold: float) -> str:
         random_text = random_text + "-"
     return random_text
 
-print(generate_string_with_random_length(0.9))
-
 
 def ask_user_age(age_limit: int) -> int:
     """
@@ -72,12 +70,9 @@ def ask_user_age(age_limit: int) -> int:
         if age.isdigit():
             if int(age) < age_limit:
                 print("Too young!")
-            elif int(age) > 100:
+            elif int(age) >= 100:
                 print("Too old!")
-            elif int(age) == age_limit:
-                return age
+            elif int(age) >= age_limit:
+                return int(age)
         else:
             print("Wrong input!")
-
-
-print(ask_user_age(18))
